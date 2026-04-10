@@ -1,2 +1,132 @@
-Hello world!
-https://github.com/jakubjirizelenka/jakubjirizelenka.github.io/commit/035459af0cd96e6a500b6fd1913c815ca2d70b34
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje stránka</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff6ec4, #7873f5, #42e695);
+            color: white;
+        }
+
+        header {
+            background: rgba(0,0,0,0.3);
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: rgba(0,0,0,0.2);
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .container {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            margin: 20px auto;
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            background: #ff6ec4;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #42e695;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.3);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Jakub Jiří Zelenka
+</header>
+
+<nav>
+    <a href="#">Domů</a>
+    <a href="cpp.html">C++ stránka</a>
+    <a href="#">Kontakt</a>
+</nav>
+
+<div class="container">
+    <h1>Vítej na mé stránce 👋</h1>
+    <p>Tahle stránka je barevná a trochu komplexní.</p>
+
+    <div class="card">
+        <h2>Projekt 1</h2>
+        <p>Nějaký popis projektu.</p>
+        <button onclick="alert('Kliknul jsi!')">Klikni</button>
+    </div>
+
+    <div class="card">
+        <h2>Projekt 2</h2>
+        <p>Další zajímavý projekt.</p>
+        <button onclick="changeColor()">Změň barvu</button>
+    </div>
+
+    <p>
+        👉 Přeskoč na C++ stránku:
+        <a href="cpp.html" style="color: yellow; font-weight: bold;">cpp.html</a>
+    </p>
+</div>
+
+<footer>
+    © 2026 Jakub Jiří Zelenka
+</footer>
+
+<script>
+    function changeColor() {
+        document.body.style.background = 
+            "linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4)";
+    }
+</script>
+
+</body>
+</html>
